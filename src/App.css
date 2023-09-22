@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik:wght@300&family=Yantramanav:wght@300;900&display=swap');
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,400;1,500;1,700&family=Rubik:wght@300&family=Unica+One&family=Yantramanav:wght@300;900&display=swap');
 
 
 :root{
@@ -6,10 +11,34 @@
   --primary-purple: #d434fe;
   --primary-blue: #150e28;
   --primary-light-blue: #9038ff;
-  --primary-black: black;
+  --primary-black: rgb(78, 74, 74);
+  --primary-pink: #FF26B9;
 }
 
+.btnn{
+  font-family: 'Montserrat', sans-serif;
+  margin: .8rem 7rem 0 0;
+  width: 172px;
+  height: 45px;
+  border: none;
+  border-radius: 3px;
+  color: var(--primary-white) !important;
+  background: linear-gradient(100deg, var(--primary-pink), var(--primary-purple), var(--primary-light-blue)) !important;
+  text-transform: capitalize;
+}
 
+span{
+  color: var(--primary-purple);
+}
+
+h2{
+  font-family: 'Yantramanav', sans-serif;
+}
+
+p,
+h3{
+  font-family: 'Montserrat', sans-serif;
+}
 
 /***********NavBar******************/
 
@@ -19,14 +48,14 @@ nav{
 }
 
 .navbar-brand{
-  margin: 1rem 2rem 0;
+  margin: 1rem 4rem 0;
   font-size: 2rem !important;
   font-weight: bolder;
   font-family: 'Yantramanav', sans-serif;
 }
 
 .navbar-nav{
-  margin: 1.2rem 0 0 auto;
+  margin: 1.2rem 4rem 0 auto;
 }
 
 .navbar-nav li a{
@@ -43,12 +72,591 @@ nav{
 
 .btnn{
   font-family: 'Montserrat', sans-serif;
-  margin: .8rem 2rem 0 1rem;
+  margin: .8rem 7rem 0 0;
   width: 172px;
-  height: 52px;
+  height: 45px;
   border: none;
   border-radius: 3px;
   color: var(--primary-white) !important;
-  background: linear-gradient(100deg, #FF26B9, var(--primary-purple), var(--primary-light-blue)) !important;
+  background: linear-gradient(100deg, var(--primary-pink), var(--primary-purple), var(--primary-light-blue)) !important;
   text-transform: capitalize;
 }
+
+
+
+
+/***********Header******************/
+
+.header{
+  min-height: 100vh;
+  width: 100%;
+  background: var(--primary-blue);
+}
+
+.header-top{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.header-wrap{
+  background: url(../src/images/Purple-Lens-Flare-PNG.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 500px;
+  width: 50vw;
+  opacity: .7;
+  top: -6rem;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.header-head{
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  position: absolute;
+  margin-top: 2rem;
+  top: 0;
+}
+
+
+.star{
+  width: 26px;
+  height: 36px;
+  margin: 2rem 2rem 0;
+}
+
+
+.header-head h3{
+  color: var(--primary-white);
+  font-size: 30px;
+  font-style: italic;
+}
+
+.line{
+  float: right;
+  margin-top: -7px;
+  width: 230px;
+  height: 100px;
+  border: 5px solid var(--primary-pink);
+  border-color: var(--primary-purple) transparent transparent transparent;
+  border-radius: 80%/30px 30px ;
+}
+
+.header-main{
+  position: relative;
+  display: flex;
+  width: 100%
+}
+
+.header-body{
+  width: 60vw;
+  margin: 12rem 0 0 4rem;
+  color: var(--primary-white);
+}
+
+.header-body h2{
+  font-size: 5rem;
+  font-weight: bolder;
+}
+
+.flex{
+  display: flex;
+}
+
+.flex h2{
+  word-spacing: -1rem;
+  font-size: 5rem;
+}
+
+.flex-img{
+  position: absolute;
+  top: 9rem;
+  margin-left: 25.5rem;
+  height: 73px;
+  width: 53px;
+}
+
+.flex-img1{
+  height: 86px;
+  width: 86px;
+}
+
+.flex-img2{
+  margin-top: 1rem;
+  height: 58px;
+  width: 58px;
+}
+
+.header-body p{
+  width: 400px;
+  font-size: 1.01rem;
+}
+
+.images{
+  width: 50vw;
+  margin-top: 7rem;
+}
+
+.white{
+  width: 828px;
+  height: 715px;
+  margin-left: -11rem;
+}
+
+.glow{
+  position: absolute;
+  right: 78px;
+  width: 680px;
+  opacity: .8;
+}
+
+.metrix{
+  position: absolute;
+  width: 650px;
+  right: 0;
+  opacity: .5;
+}
+
+
+/***********Introduction******************/
+
+.box{
+  min-height: 80vh;
+  width: 100%;
+  background: var(--primary-blue);
+  border-top: 1px solid var(--primary-black);
+}
+
+.box-body{
+  display: flex;
+  
+}
+
+.box-images{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 4rem;
+  position: relative;
+}
+
+.bigIdea{
+  height: 427px;
+  width: 430px;
+  margin: 0 4rem 0 4rem;
+  
+}
+
+.star-p{
+  position: absolute;
+  top: 10rem;
+  left: 0;
+  height: 25px;
+  width: 21px;
+}
+
+.arrow{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 49px;
+  height: 57px;
+}
+
+.box-text{
+  margin: auto 0;
+  height: 80%;
+  color: var(--primary-white);
+  width: 519px;
+}
+
+.text-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 32px;
+}
+
+.text-head h2{
+  width: 350px;
+  font-weight: 600;
+}
+
+.text-head .star{
+  margin-top: 1rem;
+}
+
+.box-text p{
+  font-size: 14px;
+  line-height: 1.6rem;
+}
+
+.box-t{
+  margin-left: 4rem;
+  position: relative;
+}
+
+.puple-bg{
+  background: url(../src/images/Purple-Lens-Flare-PNG.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 400px;
+  width: 700px;
+  position: absolute;
+  top: -9.8rem;
+  left: -10px;
+  opacity: .6;
+}
+
+.th{
+  width: 250px;
+  height: 150px;
+}
+
+.th h2{
+  width: 200px;
+  margin-top: auto;
+}
+
+.lady-img{
+  margin-left: 2rem;
+}
+
+.text-head img{
+  margin-bottom: auto;
+}
+
+.text-p{
+  height: 210px;
+  display: flex;
+}
+
+.text-p img{
+  margin-top: auto;
+}
+
+
+/***********Criteria******************/
+
+.criteria-container{
+  display: flex;
+}
+.criteria-img{
+  width: 45vw;
+  margin: 2rem 0rem;
+  position: relative;
+}
+
+.criteria-img .star{
+  margin-left: 4rem;
+}
+
+.standing{
+  margin-top: 2rem;
+  width: 650px;
+  height: 557px;
+}
+
+.criteria-img .str{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.criteria-img .str2{
+  position: absolute;
+  margin-right: -2rem;
+  right: 0;
+  bottom: 2rem;
+}
+
+.criteria-text{
+  width: 40vw;
+  position: relative;
+  margin: 4rem auto;
+  color: var(--primary-white);
+}
+
+.criteria-head h2{
+  width: 250px;
+  font-weight: 800;
+}
+
+.criteria-p{
+  margin-top: 2rem;
+}
+
+.criteria-text .btnn{
+  margin-top: 2rem;
+}
+.puple{
+  background: url(../src/images/Purple-Lens-Flare-PNG.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 500px;
+  width: 300px;
+  position: absolute;
+  bottom: -22rem;
+  right: -5rem;
+  opacity: .3;
+}
+
+
+
+/***********FAQs******************/
+
+.text-area{
+  width: 40vw;
+  position: relative;
+  margin-top: 4rem;
+  color: var(--primary-white);
+}
+
+.faq-head h2{
+  margin-left: 4rem;
+  margin-top: 1rem;
+  width: 250px;
+  font-weight: 800;
+}
+
+.faq-head p{
+  width: 380px;
+  margin-left: 4rem;
+}
+
+.txt{
+  width: 420px;
+  margin: 2rem 4rem;
+}
+
+.p-flex{
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 1rem 0 ;
+}
+
+.p-flex::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  border-bottom: 1px solid var(--primary-pink);
+}
+
+.p-flex span{
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.image-area{
+  margin: auto;
+}
+
+.top-img{
+  display: flex;
+  width: 400px;
+  height: 120px;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.questionMark{
+  height: 71px;
+  margin-top: auto;
+}
+
+.questionMarkp{
+  margin-left: 1rem;
+  height: 97px;
+  margin-bottom: auto;
+}
+
+.top-img .star{
+  width: 21px;
+  height: 25px;
+  margin: auto 0;
+}
+
+.main-img{
+  display: flex;
+  width: 700px;
+  height: 700px;
+  position: relative;
+  right: 5rem;
+  bottom: 3rem;
+  background: url(../src/images/cwok_casual_21\ 1.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-img .star1{
+  position: absolute;
+  bottom: 22rem;
+  left: 4rem;
+  width: 26px;
+  height: 32px;
+}
+
+.main-img .star2{
+  position: absolute;
+  top: 6rem;
+  left: 10rem;
+  width: 21px;
+  height: 25px;
+}
+
+.main-img .star3{
+  position: absolute;
+  right: 10rem;
+  bottom: 0;
+  width: 26px;
+  height: 32px;
+}
+
+.work{
+  width: 641px;
+  height: 641px;
+  margin-left: -9rem;
+}
+
+
+
+
+/***********Timeline******************/
+.time-line{
+  min-height: 100vw;
+}
+
+.timeline-title{
+  margin: 4rem auto;
+  text-align: center;
+  color: var(--primary-white);
+}
+
+.timeline-title h2{
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+.timeline-title p{
+  margin: auto;
+  width: 400px;
+}
+
+.timeline{
+  margin: 4rem 0;
+}
+
+.timeline .star{
+  margin-left: 15rem;
+}
+
+.schedule{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: end;
+  width: 70vw;
+  margin: 4rem 4rem ;
+}
+
+.schedule:nth-child(1) {
+  margin-top: 10rem;
+}
+
+.schedule:nth-child(odd){
+  margin-left: auto;
+  width: 75vw;
+  text-align: start;
+  flex-direction: row-reverse;
+}
+
+.topic{
+  width: 511px;
+  margin-right: 1rem;
+}
+
+
+.topic span,
+.topicN span{
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+
+}
+
+.topic p,
+.topicN p{
+  color: var(--primary-white);
+  font-size: 16px;
+}
+
+.dates{
+  display: flex;
+  width: 25vw;
+  margin-right: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.datesN{
+  display: flex;
+  width: 30vw;
+  margin-left: 1.4rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.dates span{
+  width: 210px;
+  text-align: start;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.datesN span{
+  margin-left: 5rem;
+  width: 210px;
+  text-align: end;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.number{
+  color: var(--primary-white);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  height: 40px;
+  width: 40px;
+  background: linear-gradient(100deg, var(--primary-pink), var(--primary-purple), var(--primary-light-blue));
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 40px;
+  text-align: center;
+  margin: 5px;
+  position: relative;
+  z-index: 1;
+}
+
+.number::before{
+  content: '';
+  position: absolute;
+  display: block;
+  border-right: 3px solid var(--primary-pink);
+  left: 20px;
+  bottom: 50px;
+  width: 1px;
+  height: 85px;
+  z-index: -1;
+}
+
