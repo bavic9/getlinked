@@ -7,6 +7,8 @@ import Rules from './component/Rules';
 import Criteria from './component/Criteria';
 import Faq from './component/Faq';
 import Timeline from './component/Timeline';
+import Prizes from './component/Prizes';
+import Sponsors from './component/Sponsors';
 
 
 
@@ -20,6 +22,8 @@ function App() {
       <Criteria/>
       <Faq/>
       <Timeline/>
+      <Prizes/>
+      <Sponsors/>
     </div>
   );
 }
