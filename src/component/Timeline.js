@@ -35,7 +35,7 @@ const Timeline = () => {
                     <span>Teams Registration ends</span>
                     <p>Interested Participants are no longer Allowed to register</p>
                 </div>
-                <div className='dates'>
+                <div className='dates n3'>
                     <span className='date'>November 18, 2023</span>
                     <div className='number'>3</div>
                 </div>
@@ -55,7 +55,7 @@ const Timeline = () => {
                     <span>Getlinked Hackathon 1.0 Offically Begins</span>
                     <p>Accepted teams can now proceed to build their ground breaking skill driven solutions</p>
                 </div>
-                <div className='dates'>
+                <div className='dates n5'>
                     <span className='date'>November 18, 2023</span>
                     <div className='number'>5</div>
                 

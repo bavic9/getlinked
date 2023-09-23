@@ -528,7 +528,7 @@ nav{
 
 /***********Timeline******************/
 .time-line{
-  min-height: 100vw;
+  min-height: 100vh;
 }
 
 .timeline-title{
@@ -655,6 +655,165 @@ nav{
   width: 1px;
   height: 85px;
   z-index: -1;
+}
+
+@media screen and (max-width: 767px){
+  .timeline-title{
+    width: 80vw;
+  }
+  .timeline-title p{
+    width: 100%;
+  }
+
+  .timeline{
+    margin: 0;
+  }
+
+  .schedule{
+    width: 90vw;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  .schedule:nth-child(odd){
+    margin: 1rem auto 0;
+    padding-bottom: 2rem;
+    width: 90vw;
+    text-align: start;
+    flex-direction: column;
+  }
+
+  .topic{
+    margin: auto;
+    width: 95%;
+    margin-left: 2rem;
+    text-align: start;
+    line-height: 1.8rem;
+  }
+  .n3{
+    margin-top: .8rem !important;
+  }
+  .dates{
+    width: 100%;
+    justify-content: start;
+    margin-top: -1.4rem;
+    margin-left: 1rem;
+  }
+
+  .datesN{
+    flex-direction: row-reverse;
+    width: 100%;
+    margin-left: -1rem;
+    margin-top: -1.4rem;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .datesN span{
+    margin-left: 0;
+    text-align: start;
+    margin-left: .2rem;
+  }
+  
+  .date{
+    margin-left: .2rem;
+  }
+
+  .number{
+    font-size: 15px;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+  }
+  
+  .number::before{
+    left: 10px;
+    bottom: 35px;
+    width: 1px;
+    height: 100px;
+    z-index: -1;
+  }
+}
+
+
+@media screen and (min-width: 768px){
+  .timeline-title{
+    width: 80vw;
+  }
+  .timeline-title p{
+    width: 100%;
+  }
+
+  .timeline{
+    margin: 0;
+  }
+
+  .schedule{
+    width: 90vw;
+    margin: auto;
+    padding-bottom: 5rem;
+    flex-direction: column;
+  }
+
+  .schedule:nth-child(odd){
+    margin: 1rem auto 0;
+    padding-bottom: 5rem;
+    width: 90vw;
+    text-align: start;
+    flex-direction: column;
+  }
+
+  .topic{
+    margin: auto;
+    width: 95%;
+    margin-left: 2rem;
+    text-align: start;
+    line-height: 1.8rem;
+  }
+  .n5,
+  .n3{
+    margin-top: .8rem !important;
+  }
+  .dates{
+    width: 100%;
+    justify-content: start;
+    margin-top: -1.4rem;
+    margin-left: 1rem;
+  }
+
+  .datesN{
+    flex-direction: row-reverse;
+    width: 100%;
+    margin-left: -1rem;
+    margin-top: -1.4rem;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .datesN span{
+    margin-left: 0;
+    text-align: start;
+    margin-left: .2rem;
+  }
+  
+  .date{
+    margin-left: .2rem;
+  }
+
+  .number{
+    font-size: 15px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+  }
+  
+  .number::before{
+    left: 20px;
+    bottom: 45px;
+    width: 1px;
+    height: 75px;
+    z-index: -1;
+  }
 }
 
 
