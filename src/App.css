@@ -1,7 +1,4 @@
-::after,
-::before {
-  box-sizing: border-box;
-}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,400;1,500;1,700&family=Rubik:wght@300&family=Unica+One&family=Yantramanav:wght@300;900&display=swap');
 
@@ -226,7 +223,6 @@ nav{
 
 .box{
   min-height: 80vh;
-  width: 100%;
   background: var(--primary-blue);
   border-top: 1px solid var(--primary-black);
 }
@@ -673,31 +669,28 @@ nav{
 
 .prize-container{
   margin: 0rem 4rem;
-  display: flex;
 }
 
-.prize-container .prize-img{
-  margin-top: auto;
+.prize-img{
   margin-bottom: 12rem;
   width: 540px;
   height: 442px;
 }
 
-.prize-img{
-  
-  
-}
 
 .prizes{
-  min-height: 100vh;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .prize-head{
   display: block;
-  margin-top: 2rem;
-  margin-left: 10rem;
+  margin-top: 3rem;
+  margin-right: 12rem;
   width: 380px;
+  float: right;
   color: var(--primary-white);
   text-align: start;
 }
@@ -715,7 +708,6 @@ nav{
   display: flex;
   align-items: center;
   justify-content: space-around;
-
 }
 
 .medal{
@@ -777,12 +769,180 @@ nav{
 
 .prize-text span{
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 600;;
+}
+
+@media screen and (max-width: 767px){
+  .prize-container{
+    margin: 0rem 2rem;
+  }
+
+  .prize-head{
+    display: block;
+    margin: 3rem auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .prize-head h2{
+    font-size: 26px;
+    font-weight: 600;
+    padding: 1rem;
+    margin: auto;
+  }
+
+  .prize-head p{
+    width: 350px;
+    margin: auto;
+  }
+
+  .prizes{
+    flex-direction: column;
+  }
+  .prize-img img{
+    width: 321px;
+    height: 282px;
+    margin-left: calc((100% - 321px) / 2);
+  }
+
+  .main-prize{
+    width: 90vw;
+    justify-content: space-between;
+    margin-top: -22rem;
+  }
+  
+  .medal{
+    height: 200px;
+    width: calc((90vw - 1rem) / 3);
+    margin-top: -4rem;
+    border-radius: 10px;
+  }
+  
+  .medal-gold{
+    border: 1px solid var(--primary-purple);
+    height: 220px;
+    width: calc((90vw - 1rem) / 3);
+    margin-top: -4rem;
+    border-radius: 10px;
+  }
+  
+  .silver,
+  .bronze{
+    width: 109px;
+    height: 110px;
+    margin-left: calc((((90vw - 1rem) / 3) - (109px)) / 2);
+    top: -4rem;
+  }
+  
+  .gold{
+    width: 140px;
+    height: 150px;
+    top: -5rem;
+    left: calc((((90vw - 1rem) / 3) - (143px)) / 2);
+  }
+  
+  .prize-text h2{
+    font-size: 27px;
+  }
+  
+  .prize-text p{
+    font-size: 15px;
+  }
+  
+  .prize-text span{
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .prize-container{
+    margin: 0rem 2rem;
+  }
+
+  .prize-head{
+    display: block;
+    margin: 3rem auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .prize-head h2{
+    font-size: 26px;
+    font-weight: 600;
+    padding: 1rem;
+    margin: auto;
+  }
+
+  .prize-head p{
+    width: 350px;
+    margin: auto;
+  }
+
+  .prizes{
+    flex-direction: column;
+  }
+  .prize-img img{
+    width: 341px;
+    height: 302px;
+    margin-left: calc((100% - 321px) / 2);
+  }
+
+  .main-prize{
+    width: 60vw;
+    justify-content: space-around;
+    margin-top: -22rem;
+  }
+  
+  .medal{
+    height: 220px;
+    width: calc((55vw - 2rem) / 3);
+    margin-top: -4rem;
+    border-radius: 10px;
+  }
+  
+  .medal-gold{
+    border: 1px solid var(--primary-purple);
+    height: 220px;
+    width: calc((55vw - 2rem) / 3);
+    margin-top: -4rem;
+    border-radius: 10px;
+  }
+  
+  .silver,
+  .bronze{
+    width: 125px;
+    height: 140px;
+    margin-left: calc((((55vw - 1rem) / 3) - (128px)) / 2);
+    top: -4rem;
+  }
+  
+  .gold{
+    width: 180px;
+    height: 200px;
+    top: -8rem;
+    left: calc((((55vw - 1rem) / 3) - (187px)) / 2);
+  }
+  
+  .prize-text h2{
+    font-size: 27px;
+  }
+  
+  .prize-text p{
+    font-size: 15px;
+  }
+  
+  .prize-text span{
+    font-size: 20px;
+  }
 }
 
 
 
 /***********Sponsor******************/
+
+.sponsor-body{
+  height: 90vh;
+}
 
 .sponsor-head{
   width: 600px;
@@ -808,7 +968,9 @@ nav{
 
 .grid-container{
   width: 90vw;
+  height: 50vh;
   margin: auto;
+  border: 1px solid var(--primary-light-blue);
 }
 
 .grid {
@@ -817,11 +979,11 @@ nav{
   grid-template-rows: repeat(2, 135px);
   width: 771px;
   margin: auto;
+  margin-top: 3rem;
   
  }
 
  .grid-area {
-  color: #fff;
   padding: 50px 25px;
   text-align: center;
   position: relative;
@@ -913,3 +1075,145 @@ nav{
   width: 190px;
   height: 30px;
  }
+
+ @media screen and (max-width: 767px){
+  .sponsor-head{
+    width: 80%;
+    padding-top: 3rem;
+  }
+
+  .sponsor-head h2{
+    font-size: 29px;
+  }
+
+
+  .sponsor-head p{
+    width: 90%;
+
+  }
+
+
+  .grid-container{
+    width: 90%;
+    height: 36%;
+  }
+  .grid{
+    width: 90%;
+    height: 200px;
+    margin-top: 2.5rem;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(2, 40%);
+  }
+  .grid-area{
+    padding: 0;
+  }
+
+  .grid-area-1 img{
+    width: 50px;
+    height: 40px;
+    margin-top: 1rem;
+   }
+
+  .grid-area-2 img{
+    width: 60px;
+    height: 20px;
+    margin-top: 2rem;
+   }
+
+  .grid-area-3 img{
+    width: 45px;
+    height: 35px;
+    margin-top: 1rem;
+    margin-left: -12px;
+   }
+
+  .grid-area-4 img{
+    width: 45px;
+    height: 35px;
+    margin-top: 1rem;
+    margin-left: 5px;
+   }
+
+  .grid-area-5 img{
+    width: 55px;
+    height: 20px;
+    margin-top: 1.5rem;
+   }
+
+  .grid-area-6 img{
+    width: 75px;
+    height: 20px;
+    margin-top: 1.5rem;
+    margin-left: -5px;
+   }
+  }
+
+  @media screen and (max-width: 1023px){
+    .sponsor-head{
+      width: 80%;
+      padding-top: 3rem;
+    }
+  
+    .sponsor-head h2{
+      font-size: 29px;
+    }
+  
+    .sponsor-head p{
+      width: 90%;
+  
+    }
+  
+    .grid-container{
+      width: 90%;
+      height: 230px;
+    }
+    .grid{
+      width: 90%;
+      height: 200px;
+      margin-top: 2.5rem;
+      grid-template-columns: repeat(3, 33%);
+      grid-template-rows: repeat(2, 40%);
+    }
+    .grid-area{
+      padding: 0;
+    }
+  
+    .grid-area-1 img{
+      width: 50px;
+      height: 40px;
+      margin-top: 1rem;
+     }
+  
+    .grid-area-2 img{
+      width: 60px;
+      height: 20px;
+      margin-top: 2rem;
+     }
+  
+    .grid-area-3 img{
+      width: 45px;
+      height: 35px;
+      margin-top: 1rem;
+      margin-left: -12px;
+     }
+  
+    .grid-area-4 img{
+      width: 45px;
+      height: 35px;
+      margin-top: 1rem;
+      margin-left: 5px;
+     }
+  
+    .grid-area-5 img{
+      width: 55px;
+      height: 20px;
+      margin-top: 1.5rem;
+     }
+  
+    .grid-area-6 img{
+      width: 75px;
+      height: 20px;
+      margin-top: 1.5rem;
+      margin-left: -5px;
+     }
+  }

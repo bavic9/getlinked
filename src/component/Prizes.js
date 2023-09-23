@@ -13,13 +13,13 @@ const Prizes = () => {
         <div className='stars'>
         </div>
       <div className='prize-container'>
-        <div className='prize-img'>
-            <img src={cup} alt={cup}/>
+        <div className='prize-head'>
+            <h2>Prizers and <span>Rewards</span></h2>
+            <p>Highlight of the prizes or rewards for winers and for Participants</p>
         </div>
         <div className='prizes'>
-            <div className='prize-head'>
-                <h2>Prizers and <span>Rewards</span></h2>
-                <p>Highlight of the prizes or rewards for winers and for Participants</p>
+            <div className='prize-img'>
+                <img src={cup} alt={cup}/>
             </div>
             <div className='main-prize'>
                 <div className='medal'>
