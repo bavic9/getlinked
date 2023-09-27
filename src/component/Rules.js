@@ -5,11 +5,11 @@ import lady from '../images/7450159 1.png'
 
 const Rules = () => {
   return (
-    <div className='box box-body'>
+    <div className='box box-body fl'>
         <div className='box-text box-t'>
             <div className='puple-bg'></div>
             <div className='text-head th'>
-                <h2>
+                <h2 className=''>
                     Rules and <span>Guidelines</span>
                 </h2>
                 <img className='star' src={star} alt={star}/>
@@ -27,7 +27,7 @@ const Rules = () => {
             </div>
         </div>
         <div className='lady-img'>
-            <img className='' src={lady} alt={lady}/>
+            <img src={lady} alt={lady}/>
         </div>
     </div>
   )

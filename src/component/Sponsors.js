@@ -10,7 +10,7 @@ import img6 from '../images/Vuzual Plus.png'
 
 const Sponsors = () => {
   return (
-    <div className='box'>
+    <div className='box sp-body'>
         <div className='sponsor-body'>
             <div className='sponsor-head'>
                 <h2>Partners and Sponsors</h2>

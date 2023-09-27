@@ -14,7 +14,6 @@ const Criteria = () => {
             <img className='star str2' src={starW} alt={star}/>
         </div>
         <div className='criteria-text'>
-            <div className='puple'></div>
             <div className='criteria-head'>
                 <h2>
                         Judging Criteria <span>Key attributes</span>    
@@ -48,7 +47,10 @@ const Criteria = () => {
                     specific technologies or APIs, and any other competition-specific requirements.
                 </p>
             </div>
-            <button className='btnn'>read more</button>
+            <div className='bt-str'>
+                <button className='btnn'>read more</button>
+                <img className='star str2' src={starW} alt={star}/>
+            </div>
         </div>
     </div>
   )

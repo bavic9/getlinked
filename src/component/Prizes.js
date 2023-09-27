@@ -10,8 +10,6 @@ import bronze from '../images/bronze_medal 1.png'
 const Prizes = () => {
   return (
     <div className=' box prize-box'>
-        <div className='stars'>
-        </div>
       <div className='prize-container'>
         <div className='prize-head'>
             <h2>Prizers and <span>Rewards</span></h2>
