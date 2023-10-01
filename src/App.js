@@ -9,6 +9,7 @@ import Faq from './component/Faq';
 import Timeline from './component/Timeline';
 import Prizes from './component/Prizes';
 import Sponsors from './component/Sponsors';
+import Policy from './component/Policy';
 
 
 
@@ -24,6 +25,7 @@ function App() {
       <Timeline/>
       <Prizes/>
       <Sponsors/>
+      <Policy/>
     </div>
   );
 }

@@ -166,7 +166,7 @@ nav{
 
 .flex h2{
   word-spacing: -1rem;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .flex-img{
@@ -178,8 +178,8 @@ nav{
 }
 
 .flex-img1{
-  height: 86px;
-  width: 86px;
+  height: 80px;
+  width: 80px;
 }
 
 .flex-img2{
@@ -1255,7 +1255,7 @@ nav{
 
 /***********Timeline******************/
 .time-line{
-  min-height: 100vh;
+  height: 190vh;
 }
 
 .timeline-title{
@@ -1367,7 +1367,7 @@ nav{
   display: inline-block;
   line-height: 40px;
   text-align: center;
-  margin: 5px;
+  margin: 8px;
   position: relative;
   z-index: 1;
 }
@@ -1866,9 +1866,10 @@ nav{
 
 
 .grid-container{
-  width: 90vw;
+  width: 80vw;
   height: 50vh;
   margin: 2rem auto;
+  border-radius: 10px;
   border: 1px solid var(--primary-light-blue);
 }
 
@@ -2119,4 +2120,255 @@ nav{
       margin-top: 1.5rem;
       margin-left: -5px;
      }
+  }
+
+
+/***********Policy******************/
+
+  .policy-container{
+    display: flex;
+    width: 100%;
+
+  }
+
+  .policy-texts{
+    margin: 4rem 4rem;
+    color: var(--primary-white);
+  }
+
+  .policy-head h2{
+    font-size: 38px;
+    font-weight: 700;
+    width: 320px;
+  }
+
+  .policy-head h6{
+    color: #6c6e73;
+    font-size: 20px;
+  }
+
+  .policy-head p{
+    width: 80%;
+    font-size: 17px;
+    margin: 2rem 0 4rem;
+  }
+
+  .policy-rule{
+    padding: 3rem;
+    border: 1px solid var(--primary-light-blue);
+  }
+
+  .policy-rule p{
+    font-size: 17px;
+    margin-bottom: 2rem;
+  }
+
+  .policy-rule span{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .policy-rule h3{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+
+  .term{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .term img{
+    height: 20px;
+    width: 20px;
+    margin-right: 1.2rem;
+  }
+
+  .policy-rule button{
+    margin-left: calc((100% - 172px) / 2);
+  }
+
+  .policy-imgs{
+    padding: 3rem;
+    position: relative;
+  }
+
+  .policy-imgs img{
+    height: 700px;
+    width: 500px;
+  }
+
+  .policy-imgs img:nth-child(2){
+    position: absolute;
+    left: 0;
+    bottom: 4rem;
+  }
+
+  @media screen and (max-width: 767px){
+    .policy-container{
+      flex-direction: column;
+      padding-bottom: 15rem;
+    }
+
+    .policy-texts{
+      text-align: center;
+      margin: 4rem auto;
+    }
+
+    .policy-head h2{
+      margin: auto;
+      width: 55%;
+      font-size: 25px;
+      text-align: center;
+    }
+
+    .policy-head h6{
+      width: 100%;
+      font-size: 15px;
+    }
+
+    .policy-head p{
+      width: 90%;
+      font-size: 15px;
+      margin: 1rem auto 2rem;
+    }
+
+    .policy-rule{
+      padding: 1rem;
+      width: 90%;
+      margin: auto;
+    }
+
+    .policy-rule p{
+      font-size: 15px;
+    }
+
+    .policy-rule span{
+      font-size: 18px;
+      width: 100%;
+      text-align: start;
+      float: left;
+    }
+
+    .policy-rule h3{
+      font-size: 15px;
+      text-align: start;
+    }
+
+    .term img{
+      width: 15px;
+      height: 15px;
+    }
+
+    .term p{
+      text-align: start;
+    }
+
+    .policy-rule button{
+      width: 150px;
+      margin: 0 auto 2rem;
+    }
+
+    .policy-imgs{
+      width: 90%;
+      margin: -1rem auto;
+      padding: 0;
+    }
+
+    .policy-imgs img{
+      margin-left: calc((100% - 300px) / 2);
+      height: 400px;
+      width: 300px;
+    }
+
+    .policy-imgs img:nth-child(2){
+      bottom: -8rem;
+      left: -1rem;
+    }
+  }
+
+
+  @media screen and (min-width: 768px) and (max-width: 1023px){
+    .policy-container{
+      flex-direction: column;
+      padding-bottom: 15rem;
+    }
+
+    .policy-texts{
+      text-align: center;
+      margin: 4rem auto;
+    }
+
+    .policy-head h2{
+      margin: 1rem auto;
+      width: 55%;
+      font-size: 25px;
+      text-align: center;
+    }
+
+    .policy-head h6{
+      width: 100%;
+      font-size: 15px;
+    }
+
+    .policy-head p{
+      width: 70%;
+      font-size: 15px;
+      margin: 1rem auto 2rem;
+    }
+
+    .policy-rule{
+      padding: 1rem;
+      width: 70%;
+      margin: auto;
+    }
+
+    .policy-rule p{
+      font-size: 15px;
+    }
+
+    .policy-rule span{
+      font-size: 18px;
+      width: 100%;
+      text-align: start;
+      float: left;
+    }
+
+    .policy-rule h3{
+      font-size: 15px;
+      text-align: start;
+    }
+
+    .term img{
+      width: 15px;
+      height: 15px;
+    }
+
+    .term p{
+      text-align: start;
+    }
+
+    .policy-rule button{
+      width: 170px;
+      margin: 0 auto 2rem;
+    }
+
+    .policy-imgs{
+      width: 90%;
+      margin: -1rem auto;
+      padding: 0;
+    }
+
+    .policy-imgs img{
+      margin-left: calc((100% - 400px) / 2);
+      height: 500px;
+      width: 400px;
+    }
+
+    .policy-imgs img:nth-child(2){
+      bottom: -8rem;
+      left: -1rem;
+    }
   }
