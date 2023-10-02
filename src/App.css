@@ -56,17 +56,27 @@ nav{
   margin: 1.2rem 4rem 0 auto;
 }
 
+.navbar-nav li{
+  text-align: center;
+  margin: auto;
+
+}
+
 .navbar-nav li a{
   font-family: 'Montserrat', sans-serif;
   text-transform: capitalize;
   margin-right: 1rem;
   margin-left: 1rem;
   color: var(--primary-white);
+  text-decoration: none;
+  padding: 6px;
 }
 
 .navbar-nav li a:hover{
   color: var(--primary-purple);
 }
+
+
 
 .btnn{
   font-family: 'Montserrat', sans-serif;
@@ -1324,7 +1334,7 @@ nav{
 
 .dates{
   display: flex;
-  width: 25vw;
+  width: 35%;
   margin-right: 2rem;
   align-items: center;
   justify-content: space-between;
@@ -1333,8 +1343,7 @@ nav{
 
 .datesN{
   display: flex;
-  width: 30vw;
-  margin-left: 1.4rem;
+  width: 40.7%;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
@@ -1380,7 +1389,7 @@ nav{
   left: 20px;
   bottom: 50px;
   width: 1px;
-  height: 85px;
+  height: 76px;
   z-index: -1;
 }
 
@@ -2371,4 +2380,127 @@ nav{
       bottom: -8rem;
       left: -1rem;
     }
+  }
+
+  /***********Footer******************/
+
+  .footer{
+    border-top: 1px solid var(--primary-black);
+    background-color: var(--primary-blue);
+    height: auto;
+  }
+
+  .footer-flex{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding-top: 4rem;
+    margin: auto;
+    color: var(--primary-white);
+  }
+
+  .footer-head{
+    width: 45%;
+  }
+
+  .footer-head h2{
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .footer-head p{
+    font-size: 15px;
+    margin-bottom: 4rem;
+  }
+
+  .footer-terms{
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .term-use{
+    width: 49%;
+    border-right: 2px solid var(--primary-light-blue);
+  }
+
+  .footer-terms p:nth-child(2){
+    width: 50%;
+    text-align: end;
+  }
+
+  .footer-links span{
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 1.4rem;
+    text-transform: capitalize;
+  }
+
+  .footer-links .navbar-nav{
+    font-size: 18px;
+  }
+
+  .footer-links .navbar-nav .nav-item{
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: start;
+  }
+
+  .app-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    list-style: none;
+    margin-left: -2rem;
+    margin-top: 2rem;
+  }
+
+  .app-icon{
+    color: var(--primary-white);
+    height: 25px;
+    width: 25px;
+  }
+
+  .app-icon:hover{
+    color: var(--primary-light-blue);
+  }
+
+  .footer-contacts{
+    width: 160px; 
+  }
+
+  .footer-contacts .contact-nav{
+    list-style: none;
+  }
+
+  .contact-us{
+    font-size: 18px;
+    margin-left: -2rem;
+  }
+
+  .contact-icon{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 1rem;
+  }
+
+  .app{
+    width: 20px;
+    height: 20px;
+  }
+
+  .address{
+    width: 80%;
+  }
+
+  .footer-end{
+    color: var(--primary-white);
+    font-size: 15px;
+    width: 300px;
+    margin: 4rem auto 0;
+    padding-bottom: 4rem;
   }

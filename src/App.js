@@ -1,5 +1,5 @@
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './component/Navbar';
 import Header from './component/Header';
 import Intro from './component/Intro';
@@ -10,6 +10,7 @@ import Timeline from './component/Timeline';
 import Prizes from './component/Prizes';
 import Sponsors from './component/Sponsors';
 import Policy from './component/Policy';
+import Footer from './component/Footer';
 
 
 
@@ -26,6 +27,7 @@ function App() {
       <Prizes/>
       <Sponsors/>
       <Policy/>
+      <Footer/>
     </div>
   );
 }

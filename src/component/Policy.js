@@ -4,9 +4,6 @@ import lock from '../images/Vector11.png'
 import unlock from '../images/08 1.png'
 
 
-
-
-
 const Policy = () => {
   return (
     <div className='box'>
