@@ -156,7 +156,8 @@ nav{
 .header-main{
   position: relative;
   display: flex;
-  width: 100%
+  justify-content: space-between;
+  width: 100%;
 }
 
 .header-body{
@@ -209,9 +210,9 @@ nav{
 }
 
 .white{
-  width: 828px;
+  width: 728px;
   height: 715px;
-  margin-left: -11rem;
+  margin-left: -12rem;
 }
 
 .glow{
@@ -2503,4 +2504,31 @@ nav{
     width: 300px;
     margin: 4rem auto 0;
     padding-bottom: 4rem;
+  }
+
+
+  @media screen and (max-width: 767px){
+    .footer-flex{
+      flex-direction: column;
+      margin-left: 3rem;
+    }
+
+    .footer-head{
+      width: 90%;
+    }
+
+    .app-icons{
+      margin-top: 0;
+    }
+
+    .footer-contacts{
+      margin-top: 2rem;
+      margin-left: 1.5rem;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px){
+    .footer-contacts{
+      width: 180px;
+    }
   }
